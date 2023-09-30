@@ -1,0 +1,196 @@
+
+
+/*--------헤더----------*/
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding:  0 11.5%;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    z-index: 9999999;
+    transform: translateY(26px);
+    transition: transform .25s;
+}
+
+
+header.on{
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    transform: translateY(0);
+    padding:  0;
+}
+header.on .headerInner {
+    transform: translateY(0);
+}
+
+header.on .headerBack{
+    width: 100%;
+    padding: 0 11.5%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
+
+header .headerInner {
+    z-index: 100;
+    position: relative;
+    height: 85px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    transition: 0.25s;
+
+}
+header .headerLogo{
+    width: 332px;
+    height: 42px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin-top: 22px;
+}
+header .headerLogo img{}
+header .headerMenu{}
+
+header .headerMenu .headerGnb{
+    display: flex;
+    margin-top: 32px;
+}
+
+header .headerMenu .headerGnb > li{
+    width: 166px;
+    text-align: center;
+    font-family: "Pretendard", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+header .headerMenu .headerGnb > li > a{
+    text-decoration: none;
+    color: inherit;
+}
+header .headerMenu .headerGnb > li:hover >a{
+    color: #10AACE;
+}
+header .headerMenu .headerGnb .sub{
+    display: none;
+    opacity: 0;
+    font-weight: 400;
+    font-family: "Pretendard", sans-serif;
+}
+
+
+header .headerInner:hover .headerBack,
+header .headerInner:hover .headerGnb .sub{
+    display: block;
+    opacity: 1;
+    font-size: 0;
+}
+header .headerMenu .headerBack .headImg1{
+    position: absolute;
+    margin-left: 60px;
+    bottom: 0;
+}
+
+header .headerMenu .headerGnb .sub li:nth-child(1){
+    margin-top: 63px;
+}
+header .headerMenu .headerGnb .sub li:nth-child(2){
+    margin-top: 22px;
+}
+header .headerMenu .headerGnb .sub li:nth-child(3){
+     margin-top: 22px;
+}
+header .headerMenu .headerGnb .sub li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #787878;
+}
+header .headerMenu .headerGnb .sub li a:hover{
+    color: #303030;
+    font-weight: 700;
+    font-family: "Pretendard", sans-serif;
+}
+
+header .headerBack{
+    width: 100%;
+    height: 188px;
+    background: white;
+    position: absolute;
+    z-index: -1;
+    top: 65px;
+    left: 0;
+    display: none;
+    /* transition: .5s; */
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/*----------푸터---------*/
+
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding-top: 73px;
+    box-sizing: border-box;
+}
+footer .inner{
+    display: flex;
+}
+footer .logoWrap{
+    margin-top: 12px;
+    padding-right: 199px;
+    padding-bottom: 73px;
+    box-sizing: border-box;
+}
+
+footer .infoWrap{
+    justify-content: center;
+    align-items: center;
+    padding-right: 226px;
+    box-sizing: border-box;
+}
+footer .infoWrap .top{
+    margin-bottom: 19px;
+}
+footer .infoWrap .top ul{
+    font-size: 0;
+}
+footer .infoWrap .top ul li{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+footer .infoWrap .top ul li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background: #444;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+footer .infoWrap .top ul li:last-child::after{
+    content: none;
+}
+
+
+footer .infoWrap .bottom{}
+footer .infoWrap .bottom p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Pretendard", sans-serif;
+}
+footer .topBtm{
+    padding-top: 42px;
+    box-sizing: border-box;
+    font-size: 0;
+}

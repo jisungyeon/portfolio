@@ -1,0 +1,160 @@
+/*-----지마켓체------*/
+/*@font-face {*/
+/*    font-family: 'GmarketSansLight';*/
+/*    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'GmarketSansMedium';*/
+/*    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'GmarketSansBold';*/
+/*    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
+
+@font-face {
+    src: url("../font/GmarketSansTTFLight.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-family: "GmarketSans";
+}
+
+@font-face {
+    src: url("../font/GmarketSansTTFMedium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-family: "GmarketSans";
+}
+
+@font-face {
+    src: url("../font/GmarketSansTTFBold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-family: "GmarketSans";
+}
+
+/*-----프리텐다드체------*/
+@font-face {
+    src: url("../font/Pretendard-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: 800;
+    font-family: "Pretendard";
+}
+@font-face {
+    src: url("../font/Pretendard-Black.ttf");
+    font-style: normal;
+    font-weight: 900;
+    font-family: "Pretendard";
+}
+
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Thin.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 100;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-ExtraLight.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 200;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Light.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 300;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Regular.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Medium.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-SemiBold.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Bold.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-ExtraBold.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 800;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../font/Pretendard-Black.woff2") format("woff2");*/
+/*    font-style: normal;*/
+/*    font-weight: 900;*/
+/*    font-family: "Pretendard";*/
+/*}*/
+
+
+
+/*-----노토산스체------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/

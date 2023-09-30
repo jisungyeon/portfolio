@@ -1,0 +1,469 @@
+.inner{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+/*-----------관람예약 상단-----------*/
+
+.reservation{
+    width: 100%;
+    height: 802px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    color: #FFF;
+}
+.reservation h2{
+    color: #000;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 198px;
+    margin-bottom: 60px;
+}
+.reservation .infoWrap{
+    position: relative;
+    height: 500px;
+}
+.reservation .infoWrap .txtBox{
+    position: absolute;
+    width: 562px;
+    height: 197px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 155px;
+}
+.reservation .infoWrap .txtBox .iconWrap{
+    display: flex;
+    margin-left: 155px;
+}
+.reservation .infoWrap .txtBox .iconWrap .icon1{
+    margin-right: 50px;
+}
+.reservation .infoWrap .txtBox .iconWrap .icon2{}
+.reservation .infoWrap .txtBox strong{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    display: block;
+    margin-top: 33px;
+}
+.reservation .infoWrap .txtBox p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.reservation .infoWrap .imgBox{
+    height: 500px;
+    background-image: url("../img/sub3_1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 75%;
+    display: flex;
+}
+
+/*-----------사전안내문-----------*/
+
+.dictionaryGuide{
+    height: 715px;
+    font-family: "GmarketSans", sans-serif;
+    position: relative;
+    display: flex;
+    font-size: 0;
+}
+
+.dictionaryGuide .dictionaryGuideWrap{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    /* border: 1px solid black; */
+    width: 1438px;
+    height: 606px;
+}
+
+.dictionaryGuide .grass1{
+    position: absolute;
+    left: 0;
+    top: 460px;
+}
+.dictionaryGuide .grass2{
+    position: absolute;
+    right: 0;
+    top: 467px;
+}
+.dictionaryGuide .inner{}
+.dictionaryGuide .guideTit{
+    align-items: center;
+    display: flex;
+    margin-left: 52px;
+    /* margin-top: 60px; */
+    /*border: 2px solid black;*/
+}
+.dictionaryGuide .guideTit .icon{
+    margin-right: 31px;
+}
+.dictionaryGuide .guideTit h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*-----------사전안내문-리스트-------------*/
+
+.dictionaryGuide .guideList{
+    display: flex;
+    width: 1198px;
+    height: 384px;
+    border-radius: 30px;
+    border: 3px solid #3AA6BF;
+    background: #EBF6F9;
+    margin-left: 120px;
+    margin-top: 37px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 16px;
+}
+.dictionaryGuide .guideList ul{
+    margin-left: 130px;
+    margin-top: 45px;
+}
+.dictionaryGuide .guideList ul li{
+    margin-bottom: 13px;
+    line-height: 24px;
+}
+.dictionaryGuide .guideList .treeIllust{
+    margin-top: 48px;
+    margin-left: 114px;
+}
+
+/*-------------날짜 선택-------------*/
+
+.selectWrap{
+    height: 1344px;
+    background-color: #EBF6F9;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 14%;
+    box-sizing: border-box;
+}
+
+/*-------------달력-------------*/
+
+.selectWrap .dateTime{
+    display: flex;
+}
+.selectWrap .dateSlider{
+    width: 579px;
+    height: 707px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    margin-top: 85px;
+}
+.selectWrap .dateSlider .slider{}
+.selectWrap .dateSlider .slider .slick-slide{
+    display: block;
+}
+.selectWrap .dateSlider .slider .slick-slide .dateTit{
+    text-align: center;
+    color: #318CA1;
+    margin-top: 66px;
+}
+.selectWrap .dateSlider .slider .slick-slide .dateTit h3{
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: center;
+}
+.selectWrap .dateSlider .slider .slick-slide .dateTit strong{
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+.selectWrap .dateSlider .slider .slick-slide nav{
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul{
+    text-align: center;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 30px;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul .holiday{
+    background: #D2D2D2;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul .available{
+    background: #AFDCE7;
+    transition: .1s ease;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul .available.on{
+    background-color: #55B6CB;
+    transition: .1s ease;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul{
+    margin-right: 19px;
+}
+.selectWrap .dateSlider .slider .slick-slide nav ul li{
+    margin-bottom: 16px;
+}
+
+/*-------------달력 인포-------------*/
+
+.selectWrap .dateSlider .slider .dateInfo{
+    display: flex;
+}
+.selectWrap .dateSlider .slider .dateInfo > div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+.selectWrap .dateSlider .slider .dateInfo .holidayNotice{
+    margin-left: 62px;
+}
+.selectWrap .dateSlider .slider .dateInfo .holidayNotice div{
+    background: #D2D2D2;
+}
+.selectWrap .dateSlider .slider .dateInfo .availableNotice div{
+    background: #AFDCE7;
+}
+.selectWrap .dateSlider .slider .dateInfo .select div{
+    background: #55B6CB;
+}
+.selectWrap .dateSlider .slider .dateInfo div div{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 9px;
+}
+.selectWrap .dateSlider .slider .dateInfo p{
+    display: block;
+    font-weight: 300;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 20px;
+}
+
+/*-------------슬라이드 버튼-------------*/
+
+.selectWrap .dateSlider .prevArrow{
+    position: absolute;
+    top: 90px;
+    left: 58px;
+}
+.selectWrap .dateSlider .nextArrow{
+    position: absolute;
+    top: 90px;
+    right: 58px;
+}
+
+/*-------------관람시간 선택-------------*/
+
+.selectWrap .timeWrap{
+    width: 597px;
+    height: 707px;
+    background: white;
+    border-radius: 30px;
+    margin-top: 85px;
+    margin-left: 28px;
+    font-family: "GmarketSans", sans-serif;
+}
+.selectWrap .timeWrap h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 70px;
+    text-align: center;
+}
+.selectWrap .timeWrap .timeTit{
+    font-size: 0px;
+    font-weight: 700;
+    line-height: 64px;
+    border-bottom: 2px solid black;
+    height: 64px;
+    width: 515px;
+    margin-left: 41px;
+    margin-top: 38px;
+}
+.selectWrap .timeWrap .timeTit strong{
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.selectWrap .timeWrap .timeTit strong:nth-child(1){
+    width: 83px;
+}
+.selectWrap .timeWrap .timeTit strong:nth-child(2){
+    width: 330px;
+}
+.selectWrap .timeWrap .timeTit strong:nth-child(3){
+    width: 102px;
+}
+
+.selectWrap .timeWrap nav {
+    width: 515px;
+    margin-left: 41px;
+    display: block;
+    text-align: center;
+}
+.selectWrap .timeWrap nav ul{
+    display: flex;
+    border-radius: 25px;
+    transition: .1s ease;
+}
+/* .selectWrap .timeWrap nav .see{
+    background: #AFDCE7;
+} */
+
+
+
+.selectWrap .timeWrap nav ul.on{
+    background-color: #AFDCE7;
+    transition: .1s ease;
+}
+.selectWrap .timeWrap nav .soldOut.off{
+    background-color: #D2D2D2;
+    transition: .1s ease;
+}
+.selectWrap .timeWrap nav ul:first-child{
+    margin-top: 10px;
+}
+.selectWrap .timeWrap nav ul li{
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+}
+.selectWrap .timeWrap nav ul .red{
+    color: red;
+}
+.selectWrap .timeWrap nav ul li:nth-child(1){
+    width: 83px;
+
+}
+.selectWrap .timeWrap nav ul li:nth-child(2){
+    width: 330px;
+}
+.selectWrap .timeWrap nav ul li:nth-child(3){
+    width: 102px;
+    text-align: left;
+}
+
+
+.selectWrap .timeWrap .timeInfo{
+    display: flex;
+    margin-left: 344px;
+    margin-top: 30px;
+}
+.selectWrap .timeWrap .availableNotice {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.selectWrap .timeWrap .availableNotice div{
+    background: #D2D2D2;
+}
+.selectWrap .timeWrap .timeInfo .select {
+    display: flex;
+    align-items: center;
+}
+.selectWrap .timeWrap .timeInfo .select div{
+    background: #AFDCE7;
+}
+.selectWrap .timeWrap .timeInfo .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 9px;
+}
+.selectWrap .timeWrap .timeInfo p{
+    display: block;
+    font-weight: 300;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 16px;
+}
+
+/*-------------취소/환불규정-------------*/
+
+.selectWrap .refund{
+    width: 1204px;
+    height: 262px;
+    border-radius: 30px;
+    background: #FFF;
+    margin-top: 28px;
+    font-family: "GmarketSans", sans-serif;
+    padding-left: 68px;
+    padding-top: 47px;
+    box-sizing: border-box;
+}
+.selectWrap .refund ul{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+.selectWrap .refund ul li{
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.selectWrap .refund ul li:first-child{
+    margin-top: 22px;
+}
+
+/*----------- 예매하러 가기----------- */
+
+.getTicket{
+    width: 504px;
+    height: 108px;
+    margin-left: 350px;
+    margin-top: 68px;
+    font-family: "GmarketSans", sans-serif;
+}
+.getTicket .check{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    line-height: 24px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.getTicket .chcek #myCheckbox{
+
+}
+.getTicket .check .custom{
+    font-size: 20px;
+}
+.getTicket button{
+    font: inherit;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    width: 504px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #AFDCE7;
+    border: none;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    cursor: pointer;
+    margin-right: 11px;
+}

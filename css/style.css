@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+.inner{
+    width: 1360px;
+    margin: 0 auto;
+}
+
+
+.followCursor{
+    width: 80px;
+    height: 80px;
+    /* background: black; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* transform: translate(-20%, -20%); */
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: 100ms ease-out;
+}
+.followCursor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------헤더--------- */
+
+header{
+    position: fixed;
+    width: 1723px;
+    height: 72px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+header .headBtm,
+header .headTop{
+    width: 1718px;
+    height: 63px;
+    border: 1px solid black;
+    border-radius: 61px;
+    position: absolute;
+}
+header .headBtm{
+    background-color: #6AFF82;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+
+}
+header .headTop{
+    background-color: white;
+    left: 0;
+    top: 0;
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    display: flex;
+    padding: 0 49px 0 57px;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+}
+header .headTop .left{
+    display: flex;
+}
+header .headTop .left span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 21px;
+}
+header .headTop .left span:first-child{
+}
+header .headTop .left span:last-child{
+    margin-right: 0;
+}
+
+header .headTop ul{
+    display: flex;
+    justify-content: center;
+    line-height: 63px;
+    margin: 0 auto;
+}
+header .headTop ul li{
+    margin-right: 40px;
+}
+header .headTop ul li:last-child{
+    margin: 0;
+}
+header .headTop ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+header .headTop ul li a:hover{
+    font-style: italic;
+}
+
+header .headTop .right{
+    margin-top: 21px;
+    /* margin-right: 49px; */
+}
+
+/* ---------메인1--------- */
+
+.home{
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.home .backImg{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home .backImg img{
+}
+
+.home .talkWrap{
+    position: absolute;
+    left: 44px;
+    top: 262px;
+    width: 372px;
+    height: 326px;
+}
+.home .talkWrap .talk{
+    background-image: url("../img/1_talk.png");
+    background-position: center;
+    width: 372px;
+    height: 237px;
+    position: absolute;
+    left: 0px;
+    top: 89px;
+}
+.home .talkWrap p{
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    position: absolute;
+    left: 82px;
+    top: 150px;
+    display: block;
+}
+.home .talkWrap .emoji{
+    width: 138px;
+    height: 138px;
+    position: absolute;
+    left: 99px;
+    top: 0px;
+}
+.home .talkWrap .emoji img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .boardWrap{
+    position: absolute;
+    right: 47px;
+    top: 513px;
+    width: 330px;
+    height: 270px;
+    /* border: 1PX SOLID BLACK; */
+}
+.home .boardWrap .eye{
+    width: 138px;
+    height: 138px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    z-index: 99;
+    /* border: 1PX SOLID BLACK; */
+}
+.home .boardWrap .eye img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home .boardWrap .boardTop,
+.home .boardWrap .boardbottom{
+    width: 321px;
+    height: 182px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.home .boardWrap .boardTop{
+    left: 0;
+    top: 78px;
+    overflow: hidden;
+    z-index: 10;
+}
+.home .boardWrap .boardTop .boardHeader{
+    height: 31px;
+    background: #6AFF82;
+    border-bottom: 1px solid black;
+}
+.home .boardWrap .boardTop .txtTop{
+    position: absolute;
+    top: 60px;
+    display: flex;
+}
+.home .boardWrap .boardTop .txtTop div{
+    left: 0;
+    animation: infiniteTextTop 40s linear infinite;
+
+}
+
+.home .boardWrap .boardTop .txtBtm{
+    position: absolute;
+    top: 101px;
+    display: flex;
+}
+.home .boardWrap .boardTop .txtBtm div{
+    right: 0;
+    animation: infiniteTextBtm 40s linear infinite;
+}
+
+.home .boardWrap .boardTop .txtTop div,
+.home .boardWrap .boardTop .txtBtm div{
+    color: #6b6b6b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+
+    white-space: nowrap;
+}
+
+@keyframes infiniteTextTop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes infiniteTextBtm {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.home .boardWrap .boardTop .grid{
+    background-image: url("../img/1_grid.png");
+    width: 320px;
+    height: 150px;
+}
+.home .boardWrap .boardbottom {
+    right: 0;
+    bottom: 0;
+}
+
+.home .hand {
+    position: absolute;
+    top: 499px;
+    right: 332px;
+    width: 102px;
+    height: 102px;
+    z-index: 99;
+}
+.home .hand img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------이력서-------------- */
+
+.aboutMe{
+    padding-top: 57px;
+    box-sizing: border-box;
+}
+.aboutMe h2{
+    font-family: "Pretendard", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 99px;
+}
+.aboutMe .titWrap{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #6AFF82;
+    font-family: "Pretendard", sans-serif;
+    font-weight: 300;
+    display: inline-flex;
+    padding: 27px 47px;
+    box-sizing: border-box;
+    font-size: 0;
+    justify-content: space-between;
+}
+.aboutMe .titWrap h3{
+    font-size: 26px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+.aboutMe .titWrap strong{
+    font-size: 26px;
+}
+
+.aboutMe .tools{
+    padding: 25px 47px 25px 47px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #D8D8D8 0%, #EDEDED 22.92%, #C1C1C1 50.52%, #EDEDED 77.60%, #989898 100%);
+}
+.aboutMe .tools .design,
+.aboutMe .tools .coding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1826px;
+    height: 127px;
+    padding: 16px 0px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25) inset;
+    font-family: "Pretendard", sans-serif;
+    font-size: 85px;
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.aboutMe .tools .design{
+    margin-bottom: 26px;
+}
+.aboutMe .tools .design div{
+    animation: infiniteDesign 19s linear infinite;
+    line-height: 127px;
+    display: flex;
+    align-items: center;
+}
+.aboutMe .tools .design div img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.aboutMe .tools .coding{}
+.aboutMe .tools .coding div{
+    animation: infiniteCoding 13s linear infinite;
+    line-height: 127px;
+    display: flex;
+    align-items: center;
+}
+.aboutMe .tools .coding div img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@keyframes infiniteDesign {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes infiniteCoding {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.aboutMe .resumeWrap{
+    background: linear-gradient(180deg, rgba(255, 152, 208, 0.00) 0%, #FF9898 100%);
+    padding-top: 69px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    position: relative;
+}
+.aboutMe .resumeWrap .img{
+    position: absolute;
+    left: 50%;
+    top: 69px;
+    transform: translate(-50%);
+}
+.aboutMe .resumeWrap .resume{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 206px;
+    font-family: "Pretendard", sans-serif;
+}
+.aboutMe .resumeWrap .resume .left,
+.aboutMe .resumeWrap .resume .right{
+    width: 663px;
+    height: 585px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding-top: 109px;
+    padding-left: 56px;
+    box-sizing: border-box;
+}
+.aboutMe .resumeWrap .resume strong{
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+.aboutMe .resumeWrap .resume .right strong{
+    margin-bottom: 16px;
+}
+.aboutMe .resumeWrap .resume p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.aboutMe .resumeWrap .resume .left strong{
+    margin-bottom: 50px;
+}
+.aboutMe .resumeWrap .resume .left p{
+    margin-bottom: 30px;
+}
+.aboutMe .resumeWrap .resume .left .profileImg{
+    margin-left: 391px;
+    margin-top: -190px;
+}
+.aboutMe .resumeWrap .resume .right strong{
+    margin-bottom: 16px;
+}
+.aboutMe .resumeWrap .resume .right .careerWrap{}
+.aboutMe .resumeWrap .resume .right .career1,
+.aboutMe .resumeWrap .resume .right .career2,
+.aboutMe .resumeWrap .resume .right .career3{
+    display: flex;
+}
+.aboutMe .resumeWrap .resume .right .career1 p:first-child{
+    margin-right: 28px;
+}
+.aboutMe .resumeWrap .resume .right .career2 p:first-child{
+    margin-right: 115px;
+}
+.aboutMe .resumeWrap .resume .right .career3 p:first-child{
+    margin-right: 20px;
+}
+.aboutMe .resumeWrap .resume .right .career3 {
+    margin-bottom: 28px;
+}
+.aboutMe .resumeWrap .resume .right .profileWrap{
+    display: flex;
+}
+.aboutMe .resumeWrap .resume .right .profileWrap .rocket img{
+    width: 186px;
+    height: 186px;
+    margin-top: -20px;
+    margin-left: 34px;
+}
+.aboutMe .resumeWrap .resume .right p{
+    /* margin-bottom: 36px; */
+}
+
+
+
+/* ani */
+.resume .left.ani {}
+.resume .left.ani :is(div, strong, p) {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.resume .left.ani.on :is(div, strong, p) {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s;
+}
+.resume .left.ani.on strong {transition-delay: 0s}
+.resume .left.ani.on p {transition-delay: 0.1s}
+.resume .left.ani.on div {transition-delay: 0.2s}
+
+
+.resume .right.ani {}
+.resume .right.ani :is(div, strong, p) {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.resume .right.ani.on :is(div, strong, p) {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.7s;
+}
+.resume .right.ani.on .careerTit {transition-delay: 0s}
+.resume .right.ani.on .careerWrap {transition-delay: 0.1s}
+.resume .right.ani.on .profileWrap {transition-delay: 0.2s}
+.resume .right.ani.on .profileWrap .rocket {transition-delay: 0.3s}
+
+
+
+
+/* -----------포트폴리오------------ */
+
+.portfolioWrap .titWrap{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #6AFF82;
+    font-family: "Pretendard", sans-serif;
+    display: inline-flex;
+    padding: 27px 47px;
+    box-sizing: border-box;
+    font-size: 0;
+    justify-content: space-between;
+}
+.portfolioWrap .titWrap h3{
+    font-size: 26px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.portfolioWrap .titWrap strong{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+/* ---------웹디자인 포트폴리오---------- */
+.portfolioWrap .inner{
+    padding: 106px 0 0 0;
+    box-sizing: border-box;
+}
+.portfolioWrap .portfolio1,
+.portfolioWrap .portfolio2{
+    font-family: "Pretendard", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 106px;
+    box-sizing: border-box;
+}
+
+.portfolioWrap .portfolio1 h4,
+.portfolioWrap .portfolio2 h4{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+.portfolioWrap .portfolio1 .img,
+.portfolioWrap .portfolio2 .img{
+    margin-bottom: 34px;
+    width: 648px;
+    height: 505px;
+    position: relative;
+}
+.portfolioWrap .portfolio1 .img:hover .hover,
+.portfolioWrap .portfolio2 .img:hover .hover{
+    opacity: 1;
+}
+.portfolioWrap .portfolio1 .img .ani,
+.portfolioWrap .portfolio2 .img .ani{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.portfolioWrap .portfolio1 .img .hover,
+.portfolioWrap .portfolio2 .img .hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 648px;
+    height: 505px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, .5);
+    transition: .1s;
+    opacity: 0;
+}
+
+
+/*---------- 웹디자인 ani ----------*/
+
+.portfolio1 .ani,
+.portfolio2 .ani{
+    background-image: url(../img/5_photoGrid2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 648px;
+    height: 505px;
+    border-radius: 30px;
+    transition: 0.7s ease;
+}
+.portfolio1 .cdg .ani.on{
+    transition-delay: 0s;
+    background-image: url("../img/3_cdg.png");
+}
+.portfolio1 .treeTech .ani.on {
+    transition-delay: 0.1s;
+    background-image: url("../img/3_treeTech.png");
+}
+.portfolio2 .casper .ani.on{
+    transition-delay: 0s;
+    background-image: url("../img/3_casper.png");
+}
+.portfolio2 .library .ani.on {
+    transition-delay: 0.1s;
+    background-image: url("../img/3_library.png");
+}
+
+
+
+.portfolioWrap .portfolio1 .img .hover .buttonWrap a,
+.portfolioWrap .portfolio2 .img .hover .buttonWrap a{
+    width: 309px;
+    height: 60px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    transition: .1s;
+
+    background: var(--linear, linear-gradient(180deg, #D8D8D8 0%, #EDEDED 22.92%, #C1C1C1 50.52%, #EDEDED 77.60%, #989898 100%));
+}
+.portfolioWrap .portfolio1 .img .hover .buttonWrap a:hover,
+.portfolioWrap .portfolio2 .img .hover .buttonWrap a:hover{
+    
+}
+
+.portfolioWrap .portfolio1 .img .hover .buttonWrap .cdgTop,
+.portfolioWrap .portfolio1 .img .hover .buttonWrap .cdgBtm{
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolioWrap .portfolio1 .img .hover .buttonWrap .cdgTop{
+    top: 188px;
+}
+.portfolioWrap .portfolio1 .img .hover .buttonWrap .cdgBtm{
+    top: 262px;
+}
+
+.portfolioWrap .portfolio1 .img .hover .buttonWrap .btm,
+.portfolioWrap .portfolio2 .img .hover .buttonWrap .btm{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    background-color: white;
+    top: 226px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .portfolioWrap .portfolio1 .cdg .img img.active{
+    background-image: url(../img/3_cdg.png);
+    background-repeat: no-repeat;
+    width: 648px;
+    height: 505px;
+} */
+
+
+
+.portfolioWrap .portfolio1 .tag1,
+.portfolioWrap .portfolio1 .tag2,
+.portfolioWrap .portfolio2 .tag1{
+    font-size: 0;
+}
+.portfolioWrap .portfolio1 .tag1 span,
+.portfolioWrap .portfolio1 .tag2 span,
+.portfolioWrap .portfolio2 .tag1 span{
+    display: inline-block;
+    padding: 11px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px;
+    border: 1px solid #000;
+    font-size: 24px;
+    font-weight: 300;
+}
+.portfolioWrap .portfolio1 .tag1{
+    margin-bottom: 21px
+}
+.portfolioWrap .portfolio1 .tag2{}
+
+
+
+
+
+
+
+
+
+
+/* ---------배너/sns/팝업 포트폴리오---------- */
+
+.portfolio3{
+    /* padding-top: 83px; */
+    padding-bottom: 78px;
+    box-sizing: border-box;
+}
+.portfolio3 .tit{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio3 .tit h3{
+    font-family: "Pretendard", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.portfolio3 .tit .tag{
+    font-family: "Pretendard", sans-serif;
+    font-size: 0;
+}
+.portfolio3 .tit .tag span{
+    display: inline-block;
+    padding: 11px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px;
+    border: 1px solid #000;
+    font-size: 26px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.portfolio3 .design1,
+.portfolio3 .design2,
+.portfolio3 .design3,
+.portfolio3 .design4,
+.portfolio3 .design5{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.portfolio3 .design1.ani{
+    height: 373px;
+}
+.portfolio3 .design2 .ani{
+    display: flex;
+    width: 669px;
+    height: 687px;
+}
+.portfolio3 .design3 .ani,
+.portfolio3 .design4 .ani{
+    width: 671px;
+    height: 165px;
+}
+.portfolio3 .design5 .ani{
+    width: 441px;
+    height: 525px;
+}
+
+
+/* ---------------팝업-------------- */
+
+/* .popupOn {
+    overflow: hidden;
+} */
+.popupOn .layerPop {
+    display: block;
+}
+
+.layerPop {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    padding-top: 50%;
+    box-sizing: border-box;
+}
+
+
+.layerPop .design1PopWrap .design1Pop,
+.layerPop .design3PopWrap .design3Pop1,
+.layerPop .design3PopWrap .design3Pop2,
+.layerPop .design4PopWrap .design4Pop1,
+.layerPop .design4PopWrap .design4Pop2{
+    width: 1500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layerPop .design1PopWrap .design1Pop img,
+.layerPop .design3PopWrap .design3Pop1 img,
+.layerPop .design3PopWrap .design3Pop2 img,
+.layerPop .design4PopWrap .design4Pop1 img,
+.layerPop .design4PopWrap .design4Pop2 img{
+    width: 100%;
+}
+
+.layerPop .design1PopWrap .close {
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 3.1%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layerPop .design1PopWrap .close img {
+    width: 85%;
+    height: 85%;
+}
+
+
+
+
+/*---------- 배너 ani ----------*/
+
+.portfolio3 .ani{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 0.7s ease;
+    background-image: url(../img/5_photoGrid2.png);
+}
+
+
+.portfolio3 .design1.ani{
+    background-image: url("../img/4_1_1.png");
+}
+.portfolio3 .design1.ani.on{
+    transition-delay: 0.1s;
+    background-image: url("../img/4_1.png");
+}
+
+.portfolio3 .design2 .ani {
+    background-image: url("../img/4_2_1.png");
+}
+.portfolio3 .design2 .ani:first-child.on {
+    transition-delay: 0s;
+    background-image: url("../img/4_2.png");
+}
+.portfolio3 .design2 .ani:last-child.on {
+    transition-delay: 0.1s;
+    background-image: url("../img/4_3.png");
+}
+
+
+.portfolio3 .design3 .ani,
+.portfolio3 .design4 .ani{
+    background-image: url("../img/4_4_1.png");
+}
+.portfolio3 .design3 .ani:first-child.on {
+    transition-delay: 0s;
+    background-image: url("../img/4_4.png");
+}
+.portfolio3 .design3 .ani:last-child.on {
+    transition-delay: 0.1s;
+    background-image: url("../img/4_5.png");
+}
+.portfolio3 .design4 .ani:first-child.on {
+    transition-delay: 0s;
+    background-image: url("../img/4_6.png");
+}
+.portfolio3 .design4 .ani:last-child.on {
+    transition-delay: 0.1s;
+    background-image: url("../img/4_7.png");
+}
+
+.portfolio3 .design5 .ani {
+    background-image: url("../img/4_8_1.png");
+}
+.portfolio3 .design5 .ani:nth-child(1).on {
+    transition-delay: 0s;
+    background-image: url("../img/4_8.png");
+}
+.portfolio3 .design5 .ani:nth-child(2).on {
+    transition-delay: 0.1s;
+    background-image: url("../img/4_9.png");
+}
+.portfolio3 .design5 .ani:nth-child(3).on {
+    transition-delay: 0.2s;
+    background-image: url("../img/4_10.png");
+}
+
+
+
+
+
+
+/* ---------푸터---------- */
+
+footer{
+    background-image: url(../img/6.png);
+    display: flex;
+    height: 451px;
+    flex-direction: column;
+    padding-top: 58px;
+    box-sizing: border-box;
+}
+
+footer p{
+    font-family: "Pretendard", sans-serif;
+    color: #242424;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration-line: underline;
+
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+.inner{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+/* ani */
+div .ani {}
+div .ani :is(strong, h2, p, span) {
+    transform: translateY(50px);
+    opacity: 0;
+}
+div .ani.on :is(strong, h2, p, span) {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+div .ani.on strong {transition-delay: 0s}
+div .ani.on h2 {transition-delay: 0.1s}
+div .ani.on p {transition-delay: 0.2s}
+div .ani.on span {transition-delay: 0.3s}
+
+
+/*------------탑 이미지------------*/
+
+.topImg{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/sub5_1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.topImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*------------소개글------------*/
+
+.dearVisitor{
+    height: 1100px;
+}
+.dearVisitor .inner{}
+.dearVisitor .textArea{
+    text-align: center;
+}
+.dearVisitor .textArea strong{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #3AA6BF;
+    margin-top: 120px;
+    margin-bottom: 14px;
+    display: block;
+}
+.dearVisitor .textArea h2{
+    text-align: center;
+    margin-bottom: 58px;
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    line-height: 44px;
+}
+.dearVisitor .textArea p{
+    display: block;
+    color: #2C2C2C;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+.dearVisitor .textArea span{
+    color: #5B5B5B;
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.dearVisitor .imgArea{}
+.dearVisitor .imgArea img{}
+
+
+/*------------소개글2------------*/
+
+.dearVisitor2{
+    height: 713px;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dearVisitor2 .topBox{
+    margin-left: 290px;
+    padding-top: 230px;
+    box-sizing: border-box;
+    width: 432px;
+}
+
+.dearVisitor2 .topImgBox{
+    margin-top: 111px;
+    position: absolute;
+    right: 0;
+}
+
+.dearVisitor2 .topImgBox img{}
+
+.dearVisitor2 .topBox > strong,
+.dearVisitor3 .btmBox > strong{
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 18px;
+    color: #3AA6BF;
+}
+.dearVisitor2 h2,
+.dearVisitor3 h2{
+    color: #323232;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+.dearVisitor2 h2 .accent,
+.dearVisitor3 h2 .accent{
+    color: #3AA6BF;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+}
+.dearVisitor2 p,
+.dearVisitor3 p{
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*------------소개글3------------*/
+
+.dearVisitor3{
+    height: 729px;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+}
+.dearVisitor3 .btmImgBox{
+    position: absolute;
+    left: 0;
+}
+.dearVisitor3 .btmBox .btmImgBox img{}
+.dearVisitor3 .btmBox{
+    text-align: right;
+    margin-top: 166px;
+    /* margin-right: 290px; */
+}
+
+
+/*------------소개글4------------*/
+
+.unesco {
+    position: relative;
+}
+.unesco .infoBox{
+}
+.unesco .infoBox .inner{
+    position: absolute;
+    top: 252px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Pretendard", sans-serif;
+}
+.unesco .infoBox .logoBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 119px 89px;
+    box-sizing: border-box;
+}
+.unesco .infoBox .logoBox img{
+    display: block;
+}
+.unesco .infoBox .inner p{
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 45px;
+}
+.unesco .infoBox .inner p:last-child{
+    margin-bottom: 0;
+}
+.unesco .infoBox .inner span{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    display: block;
+    text-align: right;
+}
+.unesco .backImg{
+    height: 990px;
+    background-image: url("../img/sub5_5_2.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+

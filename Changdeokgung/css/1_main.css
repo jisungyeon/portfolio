@@ -1,0 +1,641 @@
+/*div{border: 1px solid green;}*/
+/*div>*{border: 1px solid blue;}*/
+/*div>div>*{border: 1px solid purple;}*/
+
+.inner{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.pos {
+    /*display: none;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    font-size: 30px;
+    z-index: 9999999900000000099;
+}
+
+
+/*--------팝업----------*/
+
+
+
+
+/*--------메인 슬라이드 - 슬라이드----------*/
+.visual{
+    height: 1080px;
+    background: #EBF6F9;
+    position: relative;
+}
+.visual .mainSlide{
+    position: relative;
+}
+.visual .mainSlide .slider{}
+.visual .mainSlide .slider .slick-slide{
+    width: 100%;
+}
+.visual .mainSlide .slider .slick-slide img{}
+
+
+/*--------메인 슬라이드 - 화살표----------*/
+
+.visual .mainSlide .prevArrow,
+.visual .mainSlide .nextArrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.visual .mainSlide .prevArrow{
+    left: 50px;
+}
+.visual .mainSlide .nextArrow{
+    right: 50px;
+}
+
+/*--------메인 슬라이드 - 도트----------*/
+
+.visual .mainSlide .dotsWrap{
+    position: absolute;
+    left: 50%;
+    top: 692px;
+    transform: translateX(-50%);
+    width: 68px;
+    height: 26px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: rgba(255,255,255,.6);
+}
+
+.visual .dotsWrap .customDots{
+    font-size: 0;
+    text-align: center;
+}
+.visual .dotsWrap .customDots li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+.visual .dotsWrap .customDots li:last-child{
+    margin-right: 0;
+}
+.visual .dotsWrap .customDots li button{
+    display: none;
+}
+.visual .dotsWrap .customDots li.slick-active{
+    background: #55B6CB;
+}
+
+/*--------메인 슬라이드 - 슬라이드 텍스트----------*/
+
+.visual .mainTxt{
+}
+.visual .mainTxt .inner{
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 418px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.visual .mainTxt .txt{
+    z-index: 9999;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    text-align: right;
+}
+.visual .mainTxt .txt strong{}
+.visual .mainTxt .txt h1{
+    font-size: 40px;
+    margin-top: 9px;
+}
+
+/*--------메인 슬라이드 - 퀵바----------*/
+
+.quickBar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 732px;
+    height: 190px;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #8ACFDE 0%, #AFDCE7 67.01%);
+    z-index: 999999;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    overflow: hidden;
+}
+.quickBar .inner{
+    display: flex;
+}
+.quickBar .left{
+    position: relative;
+}
+.quickBar .left .tit{
+    width: 428px;
+    height: 120px;
+    border-radius: 0px 30px 30px 0px;
+    background: #10AACE;
+    margin-top: 31px;
+}
+.quickBar .left .tit p{
+    display: block;
+    text-align: right;
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.25);
+    font-size: 27px;
+    padding-top: 33px;
+    margin-right: 32px;
+}
+.quickBar .left .illustration{
+    position: absolute;
+    left: 48px;
+    top: 5px;
+}
+.quickBar .right {}
+.quickBar .right ul{
+    display: flex;
+    margin-left: 78px;
+    margin-top: 34px;
+    width: 744px;
+    justify-content: space-between;
+}
+.quickBar .right ul li{
+    font-size: 16px;
+    text-align: center;
+}
+.quickBar .right ul li a{
+    text-decoration: none;
+    color: #006279;
+}
+.quickBar .right ul li a .imgArea{
+    width: 88px;
+    height: 88px;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 20px #91CFDE;
+    transition: .1s ease;
+}
+.quickBar .right ul li a .imgArea:hover{
+    background: #10AACE;
+}
+
+.quickBar .right ul li:nth-child(1) a .imgArea img,
+.quickBar .right ul li:nth-child(6) a .imgArea img{
+    margin-top: 20px;
+}
+.quickBar .right ul li:nth-child(2) a .imgArea img,
+.quickBar .right ul li:nth-child(7) a .imgArea img{
+    margin-top: 22px;
+}
+.quickBar .right ul li:nth-child(3) a .imgArea img{
+    margin-top: 21px;
+}
+.quickBar .right ul li:nth-child(4) a .imgArea img{
+    margin-top: 24px;
+}
+.quickBar .right ul li:nth-child(5) a .imgArea img{
+    margin-top: 28px;
+}
+.quickBar .right ul li a .textWrap{}
+
+
+/*--------메인 슬라이드 - 인포----------*/
+
+.mainInfo{
+    margin-top: 139px;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+}
+.mainInfo .time{
+    display: flex;
+    margin-bottom: 11px;
+    align-items: center;
+}
+.mainInfo .price{
+    display: flex;
+    align-items: center;
+}
+.mainInfo .time .tit{
+    margin-right: 82px;
+}
+.mainInfo .price .tit{
+    margin-right: 165px;
+}
+.mainInfo .tit{
+    display: flex;
+    font-size: 20px;
+    color: #1F5865;
+    align-items: center;
+}
+.mainInfo .time .tit img{}
+.mainInfo .price .tit img{}
+.mainInfo .tit h3{
+    margin-left: 32px;
+}
+.mainInfo strong{
+    display: flex;
+}
+.mainInfo .info{
+    font-size: 15px;
+}
+.mainInfo .info strong{
+    color: #287283;
+}
+.mainInfo .info strong p{
+    color: #73C3D4;
+    padding-left: 6px;
+}
+
+/*--------창덕궁 소개----------*/
+
+.introduce{
+    padding-top: 120px;
+    padding-bottom: 139px;
+    box-sizing: border-box;
+}
+.introduce .inner{}
+.introduce .title{
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 66px;
+}
+.introduce .title strong{
+    color: #3AA6BF;
+}
+.introduce .boxWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.introduce .boxWrap .box{
+    width: 427px;
+    height: 555px;
+    border-radius: 20px;
+    border: 2px solid #D2D2D2;
+    background: #FFF;
+}
+
+.introduce .boxWrap .box .imgBox{}
+.introduce .boxWrap .box .imgBox a{}
+.introduce .boxWrap .box .imgBox a img{
+    border-radius: 18px 18px 0 0;
+}
+
+.introduce .boxWrap .box .txtBox{
+    margin: 34px 82px 33px 42px;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 0;
+}
+.introduce .boxWrap .box .txtBox h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+}
+.introduce .boxWrap .box .txtBox strong{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 12px;
+}
+.introduce .boxWrap .box .txtBox a{
+    width: 100px;
+    height: 34px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #3AA6BF;
+    border: 1px solid #3AA6BF;
+    box-sizing: border-box;
+    transition: .1s ease;
+}
+.introduce .boxWrap .box .txtBox a:hover{
+    color: white;
+    background: #3AA6BF;
+}
+
+/*--------배너 슬라이드----------*/
+
+.saleBanner{
+    width: 100%;
+    height: 220px;
+    background-color: #FFF28E;
+    overflow: hidden;
+}
+.saleBanner .bannerSlide{}
+.saleBanner .bannerSlide .slick-slide{}
+.saleBanner .bannerSlide .slick-slide img{
+
+}
+.saleBanner .prevArrow{}
+.saleBanner .nextArrow{}
+
+
+/*--------공지----------*/
+
+.notice{
+    padding-top: 155px;
+    padding-bottom: 127px;
+    box-sizing: border-box;
+}
+.notice h2{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    /* margin-top: 155px; */
+    margin-bottom: 75px;
+}
+.notice h2 strong{
+    color: #3AA6BF;
+}
+.notice .inner{
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid black;*/
+}
+
+/*--------공지-왼쪽---------*/
+
+.notice .left{
+    width: 670px;
+}
+.notice .left .report{
+    position: relative;
+    margin-bottom: 18px;
+}
+.notice .left .report strong{
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    line-height: 35px;
+    left: 52px;
+    top: 104px;
+}
+.notice .left .report img{}
+
+.notice .left .newsWrap{
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid #BABABA;
+    background: #FFF;
+    height: 248px;
+}
+.notice .left .newsWrap .newsTit{
+    margin-left: 70px;
+    margin-right: 34px;
+    margin-top: 39px;
+
+}
+.notice .left .newsWrap .newsTit h3{
+    color: #000;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    line-height: 45px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.notice .left .newsWrap .newsTit a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 67px;
+}
+.notice .left .newsWrap .newsTit div{
+    text-decoration: none;
+    color: black;
+    margin-right: 3px;
+}
+.notice .left .newsWrap .newsTit img{}
+.notice .left .newsWrap .news{
+    margin-top: 49px;
+    width: 379px;
+}
+.notice .left .newsWrap .news ul{}
+.notice .left .newsWrap .news ul li{
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.notice .left .newsWrap .news ul li strong{
+    color: #3AA6BF;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    margin-right: 15px;
+
+}
+.notice .left .newsWrap .news ul a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+.notice .left .newsWrap .news ul .summary{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*--------공지-오른쪽---------*/
+
+.notice .right{}
+
+.notice .right .top{
+    margin-bottom: 18px;
+}
+.notice .right .top img{}
+.notice .right .middle{
+    position: relative;
+    color: #FFF;
+    margin-bottom: 18px;
+}
+.notice .right .middle .txtBox{
+    position: absolute;
+    left: 33px;
+    top: 173px;
+}
+.notice .right .bottom{
+    display: flex;
+}
+.notice .right .bottom .box1{
+    margin-right: 18px;
+}
+.notice .right .bottom .box1,
+.notice .right .bottom .box2{
+    position: relative;
+    color: #FFF;
+}
+.notice .right .bottom .box1 .txtBox,
+.notice .right .bottom .box2 .txtBox {
+    position: absolute;
+    left: 33px;
+    top: 156px;
+}
+.notice .right h3{
+    font-family: Gmarket Sans, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.notice .right p{
+    font-weight: 500;
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+.notice .right .bottom .box2 .txtBox{
+    text-shadow: 0 0 20px 0 rgba(99, 73, 50, 0.70);
+}
+
+.notice .right img{
+    cursor: pointer;
+}
+
+
+    /*----------창덕궁 관리소 소개---------*/
+
+.greetings{
+    height: 652px;
+    background-image: url("../img/5_greetings_1.png");
+}
+.greetings .txtWrap{
+    color: #FFF;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    padding-top: 175px;
+    margin-left: 290px;
+}
+.greetings .txtWrap h2{
+    font-size: 36px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 81px;
+}
+.greetings .txtWrap div{
+    width: 168px;
+    height: 49px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-top: 3px;
+    transition: .1s;
+}
+.greetings .txtWrap div a{
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.greetings .txtWrap div span{
+    background-image: url("../img/5_greetingsIcon.png");
+    display: block;
+    margin-left: 5px;
+    width: 21px;
+    height: 21px;
+    margin-bottom: 3px;
+    /* border: 1px solid black; */
+}
+
+.greetings .txtWrap div:hover {
+    background-color: white;
+}
+.greetings .txtWrap div:hover a{
+    color: #73C3D4;
+}
+.greetings .txtWrap div:hover span{
+    background-image: url("../img/5_greetingsIcon2.png");
+}
+
+/*----------관련기관소개---------*/
+
+.related-agencies{
+    position: relative;
+    max-width: 1920px; 
+    height: 381px;
+    background: #EFEFEF;
+    overflow: hidden;
+}
+.related-agencies h2{
+    color: #222;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    margin-top: 90px;
+    box-sizing: border-box;
+}
+
+.related-agencies .agencies{
+    display: flex;
+    position: absolute;
+    top: 164px;
+    white-space: nowrap;
+}
+
+@keyframes agencyMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.related-agencies .agencies .box{
+    display: flex;
+    animation: agencyMove 15s linear infinite;
+    font-size: 0;
+}
+.related-agencies .agencies .box div{
+    display: flex;
+    padding: 38px 15px;
+    padding: 39px 16px 38px 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+
+
+

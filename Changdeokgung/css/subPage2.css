@@ -1,0 +1,199 @@
+.inner{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+/*-----------관람안내-------------*/
+
+.visitInfo{
+    width: 100%;
+    height: 1027px;
+    text-align: center;
+    display: inline-block;
+}
+.visitInfo h2{
+    color: #000;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 198px;
+    margin-bottom: 60px;
+}
+.visitInfo .infoWrap{
+    position: relative;
+    height: 500px;
+}
+.visitInfo .infoWrap .txtBox{
+    display: flex;
+    justify-content: space-between;
+    width: 1119px;
+    height: 364px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 63px;
+    color: white;
+    font-family: "GmarketSans", sans-serif;
+}
+.visitInfo .infoWrap .txtBox .left{
+    width: 498px;
+}
+.visitInfo .infoWrap .txtBox .right{
+    width: 498px;
+}
+.visitInfo .infoWrap .txtBox .icon{
+    margin-top: 58px;
+}
+.visitInfo .infoWrap .txtBox h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 19px;
+}
+.visitInfo .infoWrap .txtBox strong{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-top: 25px;
+}
+.visitInfo .infoWrap .txtBox p{
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin-top: 19px;
+    line-height: 24px;
+}
+.visitInfo .infoWrap .imgBox{
+    height: 500px;
+    background-image: url("../img/sub2_1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    display: flex;
+}
+
+.visitInfo .inner{
+    text-align: left;
+    display: flex;
+    font-family: "GmarketSans", sans-serif;
+    align-items: center;
+    margin-top: 60px;
+}
+.visitInfo .icon{}
+.visitInfo h4{
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 31px;
+    margin-right: 137px ;
+}
+.visitInfo p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/*-----------관람규정-------------*/
+
+.guideLine{
+    height: 1160px;
+}
+
+.guideLine .inner{
+    text-align: left;
+}
+
+.guideLine .guideInfo{
+    display: flex;
+    font-family: "GmarketSans", sans-serif;
+    align-items: center;
+    margin-top: 20px;
+}
+.guideLine .guideInfo .icon{}
+.guideLine .guideInfo .icon img{}
+.guideLine .guideInfo h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 31px;
+    margin-right: 70px;
+}
+.guideLine .guideInfo p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/*-----------관람규정랩------------*/
+
+.guideWrap{
+    text-align: center;
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    color: #353535;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 330px;
+    margin-top: 27px;
+}
+.guideWrap > div{
+    float: left;
+    width: 310px;
+    height: 310px;
+    background-color: #EBF6F9;
+    border-radius: 30px;
+}
+.guideWrap .icon{
+    padding-top: 67px;
+    box-sizing: border-box;
+}
+.guideWrap > div:nth-child(2),
+.guideWrap > div:nth-child(5),
+.guideWrap > div:nth-child(8){
+    margin: 0 30px;
+}
+.guideWrap > div:nth-child(4),
+.guideWrap > div:nth-child(5),
+.guideWrap > div:nth-child(6){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.guideWrap .guide p{
+    margin-top: 39px;
+}
+.guideWrap > div:nth-child(2) p{
+    margin-top: 54px;
+}
+.guideWrap > div:nth-child(9) p{
+    margin-top: 28px;
+}
+
+/*-----------오시는길------------*/
+
+.direction{
+    font-weight: 700;
+    font-family: "GmarketSans", sans-serif;
+    height: 220px;
+}
+.direction .inner{
+    display: flex;
+}
+.direction .icon{
+    margin-top: 59px;
+}
+.direction .icon img{}
+.direction h4{
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 31px;
+    margin-right: 114px;
+    margin-top: 95px;
+}
+.direction p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 54px;
+}
+
+
